@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 const Keeper = () => {
   return (
-    <div>
+    <div className=''>
       <Header />
       <Note />
       <Footer />

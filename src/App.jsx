@@ -6,7 +6,7 @@ import Keeper from './Keeper App/Keeper'
 
 const App = () => {
   return (
-    <div>
+    <div className=''>
       {/* <Intro /> */}
       {/* <JSX_practice /> */}
       {/* <Components /> */}
