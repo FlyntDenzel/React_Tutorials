@@ -1,23 +1,32 @@
 import React from 'react'
+import list from './list'
 
 const Props = () => {
     const Card = (props) => {
         return <div className='p-4 '>
-            <h2 className='mb-2'>{props.name}</h2>
+            <h2 className='mb-2 text-2xl font-bold'>{props.name}</h2>
             <img src={props.image} alt="Halibel" className='rounded-lg'/>
             <h2>{props.rank}</h2>
         </div>
     }
   return (
-    <div>
+    <div className=''>
         <h1 className='text-3xl font-bold'>My Arancar List</h1>
         <Card 
-            name = "Halibel"
-            image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKYZdG5YoKzCo9LljmZhVaRpyALLu1yGN9Q&usqp=CAU"
-            rank = "Espada Tres"
+            name = {list[0].name}
+            image = {list[0].image}
+            rank = {list[0].rank}
         />
-        <Card />
-        <Card />
+        <Card 
+             name = {list[1].name}
+             image = {list[1].image}
+             rank = {list[1].rank}
+        />
+        <Card 
+            name = {list[2].name}
+            image = {list[2].image}
+            rank = {list[2].rank}
+        />
     </div>
   )
 }
