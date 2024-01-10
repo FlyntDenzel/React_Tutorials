@@ -3,6 +3,7 @@ import Intro from './components/Intro'
 import JSX_practice from './components/JSX_practice'
 import Components from './components/Components'
 import Keeper from './Keeper App/Keeper'
+import Props from './components/Props'
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       {/* <Intro /> */}
       {/* <JSX_practice /> */}
       {/* <Components /> */}
-      <Keeper />
+      {/* <Keeper /> */}
+      <Props />
     </div>
   )
 }
