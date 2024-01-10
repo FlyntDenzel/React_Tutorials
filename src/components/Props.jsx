@@ -2,13 +2,22 @@ import React from 'react'
 import list from './list'
 import Card from './Card'
 
+function createCard(contact) {
+    return <Card  
+    key = {contact.id}
+    name = {contact.name}
+    image = {contact.image}
+    rank = {contact.rank}/>
+}
+
 const Props = () => {
    
   return (
     <div className=''>
         <h1 className='text-3xl font-bold'>My Arancar List</h1>
         <div className='grid grid-cols-3'>
-            <Card 
+            {list.map(createCard)}
+            {/* <Card 
                 name = {list[0].name}
                 image = {list[0].image}
                 rank = {list[0].rank}
@@ -32,7 +41,7 @@ const Props = () => {
                 name = {list[4].name}
                 image = {list[4].image}
                 rank = {list[4].rank}
-                />
+                /> */}
         </div>
     </div>
   )
