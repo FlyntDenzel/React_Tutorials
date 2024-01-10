@@ -12,9 +12,10 @@ const App = () => {
       {/* <Intro /> */}
       {/* <JSX_practice /> */}
       {/* <Components /> */}
-      {/* <Keeper /> */}
+      <Keeper />
       {/* <Props /> */}
-      <Emoji />
+      {/* <Emoji /> */}
+
     </div>
   )
 }
