@@ -8,6 +8,7 @@ import Emoji from './Emoji App/Emoji'
 import Login from './Login-Flow/Login'
 import View from './Login-Practice/View'
 import States from './States/States'
+import Index from './States/Index'
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
       {/* <Emoji /> */}
       {/* <Login /> */}
       {/* <View /> */}
-      <States />
+      {/* <States /> */}
+      <Index />
     </div>
   )
 }
