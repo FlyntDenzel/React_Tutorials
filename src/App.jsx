@@ -6,6 +6,7 @@ import Keeper from './Keeper App/Keeper'
 import Props from './components/Props'
 import Emoji from './Emoji App/Emoji'
 import Login from './Login-Flow/Login'
+import View from './Login-Practice/View'
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       {/* <Keeper /> */}
       {/* <Props /> */}
       {/* <Emoji /> */}
-      <Login />
+      {/* <Login /> */}
+      <View />
     </div>
   )
 }
