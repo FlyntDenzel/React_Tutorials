@@ -7,6 +7,7 @@ import Props from './components/Props'
 import Emoji from './Emoji App/Emoji'
 import Login from './Login-Flow/Login'
 import View from './Login-Practice/View'
+import States from './States/States'
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
       {/* <Props /> */}
       {/* <Emoji /> */}
       {/* <Login /> */}
-      <View />
+      {/* <View /> */}
+      <States />
     </div>
   )
 }
