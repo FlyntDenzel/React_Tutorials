@@ -6,7 +6,7 @@ const Timer = () => {
         let date = new Date();
         let newDate = date.toLocaleTimeString();
         setTime(newDate)
-        console.log(newDate)
+        // console.log(newDate)
     }
   return (
     <div className='flex justify-center items-center '>

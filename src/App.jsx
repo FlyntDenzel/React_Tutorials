@@ -10,6 +10,7 @@ import View from './Login-Practice/View'
 import States from './States/States'
 import Index from './States/Index'
 import Timer from './Timer App/Timer'
+import StateTimer from './Timer App/StateTimer'
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
       {/* <View /> */}
       {/* <States /> */}
       {/* <Index /> */}
-      <Timer />
+      {/* <Timer /> */}
+      <StateTimer />
     </div>
   )
 }
