@@ -9,6 +9,7 @@ import Login from './Login-Flow/Login'
 import View from './Login-Practice/View'
 import States from './States/States'
 import Index from './States/Index'
+import Timer from './Timer App/Timer'
 
 const App = () => {
   return (
@@ -22,7 +23,8 @@ const App = () => {
       {/* <Login /> */}
       {/* <View /> */}
       {/* <States /> */}
-      <Index />
+      {/* <Index /> */}
+      <Timer />
     </div>
   )
 }
