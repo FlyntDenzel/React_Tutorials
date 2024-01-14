@@ -1,5 +1,7 @@
 import React from 'react'
 import animals from '../data/data';
+import cars from '../data/practice';
+import Tables from './Tables';
 
 // Destructuring Arrays
 // console.log(data);
@@ -11,43 +13,56 @@ import animals from '../data/data';
 // console.log(water)
 // console.log(dog);
 
-// const Array = () => {
-//   return (
-//     <>
-//     <table>
-//       <tr>
-//         <th>Brand</th>
-//         <th>Top Speed</th>
-//         <th>Top Colour</th>
-//       </tr>
-//       <tr>
-//         <td>x</td>
-//         <td>y</td>
-//         <td>z</td>
-//       </tr>
-//       <tr>
-//         <td>x1</td>
-//         <td>y1</td>
-//         <td>z1</td>
-//       </tr>
-//       <tr>
-//         <td>x2</td>
-//         <td>y2</td>
-//         <td>z2</td>
-//       </tr>
-//     </table>
-//     </>
-//   )
-// }
+const [honda, tesla] = cars;
+// console.log(cars);
 
-// export default Array
+const {speedStats: {topSpeed: hondaTopSpeed}} = honda;
+const {speedStats: {topSpeed: teslaTopSpeed}} = tesla;
+// console.log(hondaTopSpeed);
+// const {model, speedStats: {topSpeed, zeroToSixty}} = tesla;
 
-const Destructure = () => {
+const {coloursByPopularity : [hondaTopColour]} = honda
+const {coloursByPopularity : [teslaTopColour]} = tesla
+
+const Array = () => {
   return (
     <>
-
+    <table>
+      <tr>
+        <th>Brand</th>
+        <th>Top Speed</th>
+        <th>Top Colour</th>
+      </tr>
+      <tr>
+        <td>{tesla.model}</td>
+        <td>{hondaTopSpeed}</td>
+        <td>{hondaTopColour}</td>
+      </tr>
+      <tr>
+        <td>{honda.model}</td>
+        <td>{teslaTopSpeed}</td>
+        <td>{teslaTopColour}</td>
+      </tr>
+    </table>
     </>
   )
 }
 
-export default Destructure
+export default Array
+
+// const viewTable = () => {
+//   return <Tables 
+//       name = {cars.model}
+//       key = {cars.id}
+//   />
+// }
+
+// const Table = () => {
+//   return (
+//     <div>
+//       {cars.map(viewTable)}
+//     </div>
+//   )
+// }
+
+// export default Table

@@ -1,17 +1,19 @@
 const cars = [
 
     {
+        id: 1,
         model: "Honda Civic",
         coloursByPopularity: ["black", "silver"],
-        speddStats: {
+        speedStats: {
             topSpeed: 140, 
             zeroToSixty: 8.5
         }
     },
     {
+        id: 2,
         model: "Tesla Model 3",
         coloursByPopularity: ["red", "white"],
-        speddStats: {
+        speedStats: {
             topSpeed: 150,
             zeroToSixty: 3.2
         }
