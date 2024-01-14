@@ -11,6 +11,7 @@ import States from './States/States'
 import Index from './States/Index'
 import Timer from './Timer App/Timer'
 import StateTimer from './Timer App/StateTimer'
+import Array from './Destructuring/Array'
 
 const App = () => {
   return (
@@ -26,7 +27,8 @@ const App = () => {
       {/* <States /> */}
       {/* <Index /> */}
       {/* <Timer /> */}
-      <StateTimer />
+      {/* <StateTimer /> */}
+      <Array />
     </div>
   )
 }
