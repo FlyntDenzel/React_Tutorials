@@ -12,6 +12,7 @@ import Index from './States/Index'
 import Timer from './Timer App/Timer'
 import StateTimer from './Timer App/StateTimer'
 import Array from './Destructuring/Array'
+import Event from './Event_Handling/Event'
 
 const App = () => {
   return (
@@ -28,7 +29,8 @@ const App = () => {
       {/* <Index /> */}
       {/* <Timer /> */}
       {/* <StateTimer /> */}
-      <Array />
+      {/* <Array /> */}
+      <Event />
     </div>
   )
 }

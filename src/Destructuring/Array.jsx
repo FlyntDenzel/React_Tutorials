@@ -1,7 +1,6 @@
 import React from 'react'
 import animals from '../data/data';
 import cars from '../data/practice';
-import Tables from './Tables';
 
 // Destructuring Arrays
 // console.log(data);
