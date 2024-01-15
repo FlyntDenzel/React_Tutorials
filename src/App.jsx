@@ -13,6 +13,7 @@ import Timer from './Timer App/Timer'
 import StateTimer from './Timer App/StateTimer'
 import Array from './Destructuring/Array'
 import Event from './Event_Handling/Event'
+import Form from './Form/Form'
 
 const App = () => {
   return (
@@ -30,7 +31,8 @@ const App = () => {
       {/* <Timer /> */}
       {/* <StateTimer /> */}
       {/* <Array /> */}
-      <Event />
+      {/* <Event /> */}
+      <Form />
     </div>
   )
 }
