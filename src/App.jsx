@@ -15,6 +15,7 @@ import Array from './Destructuring/Array'
 import Event from './Event_Handling/Event'
 import Form from './Form/Form'
 import Exercise from './Form-Exercise/Exercise'
+import Spread from './Spread Operator/Spread'
 
 const App = () => {
   return (
@@ -34,7 +35,8 @@ const App = () => {
       {/* <Array /> */}
       {/* <Event /> */}
       {/* <Form /> */}
-      <Exercise />
+      {/* <Exercise /> */}
+      <Spread />
     </div>
   )
 }
