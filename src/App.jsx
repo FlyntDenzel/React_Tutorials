@@ -14,6 +14,7 @@ import StateTimer from './Timer App/StateTimer'
 import Array from './Destructuring/Array'
 import Event from './Event_Handling/Event'
 import Form from './Form/Form'
+import Exercise from './Form-Exercise/Exercise'
 
 const App = () => {
   return (
@@ -32,7 +33,8 @@ const App = () => {
       {/* <StateTimer /> */}
       {/* <Array /> */}
       {/* <Event /> */}
-      <Form />
+      {/* <Form /> */}
+      <Exercise />
     </div>
   )
 }
