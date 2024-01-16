@@ -2,33 +2,52 @@ import React, { useState } from 'react'
 
 const Form = () => {
 
-    const [name, setName] = useState("")
-    const [text, setText] = useState("")
+  const [fname, setFName] = useState("");
+  const [lname, setLName] = useState("");
 
-    const handleChange = (event) =>{
-        // console.log(event.target.value);
-        setName(event.target.value)
-    }
+  const updateFName = (event) => {
+    const firstName = event.target.value;
+    setFName(firstName);
+  }
 
-    const handleClick = (event) => {
-        setText(name)
-        setName("")
-        event.preventDefault();
-    }
-    return (
+  const updateLName = (event) => {
+    const lastName = event.target.value;
+    setLName(lastName);
+  }
+
+    // return (
+    //     <>
+    //     <div className='flex items-center justify-center min-h-screen bg-blue-400'>
+    //         <div className=''>
+    //             <h1 className='text-4xl'>Hello {fname} {lname}</h1>
+    //             <form>
+    //                 <div className='grid'>
+    //                     {/* assigning the value of the state to the input  */}
+    //                     <input type="text" placeholder="What's your First Name" onChange={updateFName} className='p-2 bg-transparent border my-2 text-black' value={fname}/>
+    //                     <input type="text" placeholder="What's your Second Name" onChange={updateLName} className='p-2 bg-transparent border my-2 text-black' value={lname}/>
+    //                     <button className='p-2 bg-blue-300 rounded-lg mx-2 my-2'>Submit</button>
+    //                 </div>
+    //             </form>
+    //         </div>
+    //     </div>
+    //     </>
+    //   )
+
+      return (
         <>
-        <div className='flex items-center justify-center min-h-screen bg-blue-400'>
-            <div className=''>
-                <h1 className='text-4xl'>Hello {text}</h1>
-                <form onSubmit={handleClick}>
-                    <div className='grid'>
-                        <input type="text" placeholder="What's your First Name" className='p-2 bg-transparent border my-2 text-black' value={name} onChange={handleChange}/>
-                        <input type="text" placeholder="What's your Second Name" className='p-2 bg-transparent border my-2 text-black'/>
-                        <button className='p-2 bg-blue-300 rounded-lg mx-2 my-2'>Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+             <div className='flex items-center justify-center min-h-screen bg-blue-400'>
+             <div className=''>
+                 <h1 className='text-4xl'>Hello </h1>
+                 <form>
+                     <div className='grid'>
+                         {/* assigning the value of the state to the input  */}
+                         <input type="text" placeholder="What's your First Name"  className='p-2 bg-transparent border my-2 text-black' />
+                         <input type="text" placeholder="What's your Second Name"  className='p-2 bg-transparent border my-2 text-black'/>
+                         <button className='p-2 bg-blue-300 rounded-lg mx-2 my-2'>Submit</button>
+                     </div>
+                 </form>
+             </div>
+         </div>
         </>
       )
 }
