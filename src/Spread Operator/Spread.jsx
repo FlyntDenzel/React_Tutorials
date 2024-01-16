@@ -16,26 +16,9 @@ const Spread = () => {
         const {value, name} = event.target;
         // console.log(name);
         setContact((prevContact) => {
-            if (name === "fName") {
-                return {
-                    fName: value,
-                    lName: prevContact.lName,
-                    email: prevContact.email
-                }
-            }
-            else if (name === "lName") {
-                return {
-                    fName: prevContact.fName,
-                    lName: value,
-                    email: prevContact.email
-                }
-            }
-            else if (name === "email") {
-                return {
-                    fName: prevContact.fName,
-                    lName: prevContact.lName,
-                    email:value
-                }
+            return {
+                ...prevContact,
+                [name] : value
             }
         })
     }

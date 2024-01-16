@@ -16,6 +16,7 @@ import Event from './Event_Handling/Event'
 import Form from './Form/Form'
 import Exercise from './Form-Exercise/Exercise'
 import Spread from './Spread Operator/Spread'
+import Todo from './Todo-List/Todo'
 
 const App = () => {
   return (
@@ -36,7 +37,8 @@ const App = () => {
       {/* <Event /> */}
       {/* <Form /> */}
       {/* <Exercise /> */}
-      <Spread />
+      {/* <Spread /> */}
+      <Todo />
     </div>
   )
 }
