@@ -17,6 +17,7 @@ import Form from './Form/Form'
 import Exercise from './Form-Exercise/Exercise'
 import Spread from './Spread Operator/Spread'
 import Todo from './Todo-List/Todo'
+import TodoList from './Todo-List/TodoList'
 
 const App = () => {
   return (
@@ -38,7 +39,8 @@ const App = () => {
       {/* <Form /> */}
       {/* <Exercise /> */}
       {/* <Spread /> */}
-      <Todo />
+      {/* <Todo /> */}
+      <TodoList />
     </div>
   )
 }

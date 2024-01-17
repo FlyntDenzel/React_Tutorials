@@ -33,7 +33,7 @@ const Todo = () => {
                             {
                                 item.map((newItem) => {
                                     return (
-                                        <li className='p-1 font-bold '>{newItem}</li>
+                                            <li className='p-1 font-bold '>{newItem}</li>
                                     )
                                 })
                             }
